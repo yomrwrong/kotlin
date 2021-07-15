@@ -1,6 +1,7 @@
 package com.example.kotlin
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
 
@@ -16,6 +17,9 @@ class SettingsActivity : AppCompatActivity() {
                 .commit()
         }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        Toast.makeText(this, "Demo", Toast.LENGTH_LONG).show()
+
     }
 
     class SettingsFragment : PreferenceFragmentCompat() {
